@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background: rgb(77, 67, 87);
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.card-img-top {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card {
+  padding: 1.5em 0.5em;
+  text-align: center;
+  border-radius: 2em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-left: 250px;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navbar__title {
+  margin-right: auto;
+  font-size: 150%;
+  padding: 12px 16px;
+}
+.mfs-list-table-container {
+  width: 100%;
+}
+
+.mfs-list-table-search {
+  width: 100%;
+  text-align: center;
+}
+
+#mfs-list-table-search-input {
+  width: 80%;
+  font-size: 14pt;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.mfs-list-table {
+  width: 80%;
+  margin: 20px auto;
+  text-align: left;
+  border-collapse: collapse;
+  border: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.mfs-list-table th {
+  background-color: rgb(17, 175, 174);
+  border: rgb(17, 175, 174) 1px solid;
+  color: white;
+  padding: 10px;
+}
+
+.mfs-list-table td {
+  padding: 10px;
+  border: 1px solid #CCC;
+}
+
+.mfs-list-table button {
+  width: 80%;
+  border-radius: 0;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.mfs-list-table tr:nth-child(2n - 1) {
+  background-color: #EEE;
+}

@@ -1,0 +1,121 @@
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar__title {
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+
+.navbar__item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item button {
+  margin-left: 10px;
+}
+
+/* Table */
+.mfs-list-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  color: black;
+}
+
+.mfs-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: black;
+}
+
+.mfs-list-table th,
+.mfs-list-table td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  text-align: center;
+  color: black;
+}
+
+.mfs-list-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.mfs-list-table td {
+  vertical-align: middle;
+}
+
+/* View button */
+.btn-view {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-view:hover {
+  background-color: #0056b3;
+}
+
+/* Action buttons */
+.icons-handle {
+  display: flex;
+  align-items: center;
+}
+
+.icons-handle button {
+  margin-right: 5px;
+  padding: 6px 12px;
+}
+
+/* Remarks form */
+.openform {
+  display: flex;
+  align-items: center;
+}
+
+.openform label {
+  margin-right: 10px;
+}
+
+.openform input[type="text"] {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.btn-view{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-view:hover {
+  background-color: #0056b3;
+}
+
+.btn-view-parent{
+  border: none;
+}
+
+.openform button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

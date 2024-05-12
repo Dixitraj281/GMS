@@ -1,0 +1,45 @@
+
+.container-new{
+   height: 80vh;
+   width: 70vh;
+   background-color: rgb(239, 239, 239);
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   margin-top: 5vh;
+}
+.form-new{
+  margin: 10%;
+}
+
+.sidenavbar {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.sidenavbar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.sidenavbar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.sidenavbar .btn-primary {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sidenavbar .btn-primary:hover {
+  background-color: #004080;
+  border-color: #004080;
+}
