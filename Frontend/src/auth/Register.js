@@ -2,8 +2,8 @@ import React from 'react'
 import "./auth.css";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { useEffect,useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import {useState } from 'react';
+import { toast } from 'react-toastify';
 import {registerAPI} from '../utils/ApiRequest';
 import axios from "axios"
 function Register() {
@@ -45,7 +45,7 @@ alert('password not matched')
   <section>
     <div className="container-login">
       <div className="user signinBx">
-        <div className="imgBx"><img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/reading_0re1.svg" /></div>
+        <div className="imgBx"><img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/reading_0re1.svg" alt='imgbx'/></div>
         <div className="formBx">
           <form method="POST">
           <div className="form">

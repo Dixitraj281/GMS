@@ -1,5 +1,6 @@
 const express = require('express');
-const  { delete_admin,admindata,admin_loginControllers, admin_registerControllers} = require('../controller/Admincontroller.js');
+const  { delete_admin,admindata,admin_loginControllers, admin_registerControllers,getAdminCount} = require('../controller/Admincontroller.js');
+
 
 const router = express.Router();
 
@@ -12,6 +13,7 @@ router.route("/admin-login").post(admin_loginControllers);
 // getting the all admin
 router.route("/getadmin").post(admindata);
 
-router.route("/delete").post(delete_admin)
+router.route("/delete").post(delete_admin);
+router.get('/admin-count', getAdminCount);
 
 module.exports = router;

@@ -1,0 +1,39 @@
+/* header.css */
+/* Navbar.css */
+
+.header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 14px;
+  /* position: fixed; */
+  top: 0;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header p {
+  margin: 0.5rem 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    /* width: 100vw; */
+  }
+
+  .header p {
+    margin: 0;
+  }
+}

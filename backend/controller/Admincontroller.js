@@ -153,4 +153,19 @@ const admindata=async(req,res)=>{
     }
    }
 
-module.exports={delete_admin,admin_loginControllers,admin_registerControllers,admindata}
+   const getAdminCount = async (req, res, next) => {
+    try {
+      const adminCount = await Admin.countDocuments();
+      return res.status(200).json({
+        success: true,
+        count: adminCount
+      });
+    } catch (err) {
+      return res.status(500).json({
+        success: false,
+        message: err.message
+      });
+    }
+  };
+  
+module.exports={delete_admin,admin_loginControllers,admin_registerControllers,admindata,getAdminCount}

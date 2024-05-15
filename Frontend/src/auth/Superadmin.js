@@ -3,24 +3,12 @@ import "./auth.css";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Toastcontainer, toast } from 'react-toastify';
 import { superloginAPI } from '../utils/ApiRequest';
 import axios from 'axios';
 function Superadmin() {
   const navigate=useNavigate();
   const [email,setemail]=useState('');
   const [password,setpassword]=useState('');
-
-  const toastOptions = {
-    position: "bottom-right",
-    autoClose: 2000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: false,
-    draggable: true,
-    progress: undefined,
-    theme: "dark",
-  };
 
   const logged_in=async(e)=>{
     e.preventDefault();
@@ -34,7 +22,7 @@ function Superadmin() {
                     if (data.data.success === true) {
                       localStorage.setItem("super", JSON.stringify(data.data.user));
                       // localStorage.setItem('auth', JSON.stringify(data.data.token));
-                      navigate("/superadmin");
+                      navigate("/superadmin/dashboards-a");
                       // toast.success(data.data.message, toastOptions);
                     } else {
                       // toast.error(data.data.message, toastOptions);

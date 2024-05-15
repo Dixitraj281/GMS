@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  box-sizing: border-box;
+  color: #220f5f;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr th {
+  font-size: 22px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  background-color: #f0f0f0;
+}
+
+tr td {
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+  padding: 10px 12px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="text"]:hover {
+  background-color: #f0f0f0;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #fff;
+  border-color: #aaa;
+}
+
+.table-text{
+  color: white;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  tr th,
+  tr td {
+    font-size: 9px;
+    padding: 8px;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 9px;
+  }
+
+  input[type="text"] {
+    font-size: 8px;
+  }
+ 
+}

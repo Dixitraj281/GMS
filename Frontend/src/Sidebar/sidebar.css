@@ -1,0 +1,65 @@
+/* sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 10px;
+  left: -150px; /* Initially hide the sidebar */
+  width: 200px;
+  height: 100%;
+  background-color: #333333;
+  color: #ffffff;
+  padding-top: 50px; /* Adjust padding to avoid overlap with the navbar */
+  transition: all 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0; /* Show the sidebar when 'open' class is applied */
+}
+.menu-toggle {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 30px; /* Add spacing between links */
+  transition: background-color 0.5s ease;
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+.sidebar a:hover {
+  background-color: #555555;
+
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+hr{
+  border-color: white;
+}

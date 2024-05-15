@@ -1,0 +1,53 @@
+/* usermaster.css */
+
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 4fr)); /* Adjusted width */
+  gap: 20px;
+  width: 60rem;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.user-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.user-card .card-body {
+  padding: 20px;
+}
+
+.user-card .card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.user-card .card-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.btn-danger {
+  margin-top: 10px;
+}
+.user-card-body{
+  padding: 20px;
+}

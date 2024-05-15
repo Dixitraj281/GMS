@@ -1,0 +1,59 @@
+
+.container-new{
+   width: 70vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+
+}
+.form-new{
+  margin: 10%;
+}
+.form-box{
+  background-color: rgba(51, 51, 51, 0.8); 
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+}
+.h4{
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+}
+
+.container-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-new {
+  width: 80%;
+  max-width: 500px;
+}
+
+.form-new input[type="textarea"],
+.form-new input[type="file"] {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-new {
+    margin-top: 10px;
+  }
+  .form-box{
+    width: 60vw;
+  }
+}

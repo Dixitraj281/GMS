@@ -14,3 +14,7 @@ export const getproblemadmin=`${host}/api/v2/getproblem-admin`;
 export const getproblemsuper=`${host}/api/v2/getproblem-super`;
 export const status_update=`${host}/api/v2/updatestatus`
 export const delete_admin=`${host}/api/auth/delete`;
+export const getUserCount = `${host}/api/user-count`;
+export const getAdminCount = `${host}/api/admin-count`;
+export const Problemplus = `${host}/getproblem`;
+export const Role = `${host}/check-auth`;

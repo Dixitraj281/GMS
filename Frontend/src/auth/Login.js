@@ -3,7 +3,7 @@ import "./auth.css";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { loginAPI } from '../utils/ApiRequest';
 import axios from 'axios';
 function Login() {
@@ -35,9 +35,9 @@ function Login() {
                       localStorage.setItem("user", JSON.stringify(data.data.user));
                       // localStorage.setItem('auth', JSON.stringify(data.data.token));
                       navigate("/");
-                      // toast.success(data.data.message, toastOptions);
+                      toast.success(data.data.message, toastOptions);
                     } else {
-                      // toast.error(data.data.message, toastOptions);
+                      toast.error(data.data.message, toastOptions);
                     }
               } catch (error) {
                     console.error("login failed:", error);
@@ -50,7 +50,7 @@ function Login() {
     <section>
       <div className="container-login">
         <div className="user signinBx">
-          <div className="imgBx"><img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/reading_0re1.svg" /></div>
+          <div className="imgBx"><img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/reading_0re1.svg" alt='imgbx'/></div>
           <div className="formBx">
             <form method="POST">
               <h2>User Sign In</h2>

@@ -122,4 +122,18 @@ const loginControllers = async (req, res, next) => {
         next(err);
     }
 }
-module.exports={loginControllers,registerControllers}
+const getUserCount = async (req, res, next) => {
+    try {
+      const userCount = await User.countDocuments();
+      return res.status(200).json({
+        success: true,
+        count: userCount
+      });
+    } catch (err) {
+      return res.status(500).json({
+        success: false,
+        message: err.message
+      });
+    }
+  };
+module.exports={loginControllers,registerControllers, getUserCount}

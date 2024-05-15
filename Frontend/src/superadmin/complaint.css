@@ -1,0 +1,60 @@
+
+
+.complaint-item {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  /* padding: 15px; */
+  margin-bottom: 15px;
+  width: 90%; /* Ensure the items take full width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.complaint-details {
+  margin-bottom: 10px;
+}
+
+.complaint-image {
+  margin-top: 10px;
+}
+
+.complaint-image button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complaint-image button:hover {
+  background-color: #0056b3;
+}
+
+.mfs-list-table{
+  font-size: 5px;
+  width: 90vw;
+  margin: auto;
+  color: black;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .complaint-item {
+    padding: 10px;
+    margin: 10px 0; /* Add vertical margin */
+    display: block; /* Ensure items stack vertically */
+  }
+
+  .complaint-image {
+    margin-top: 10px;
+  }
+}

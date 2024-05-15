@@ -1,8 +1,10 @@
+// problem_router.js
+
 const express = require('express');
-const multer=require('multer');
-const GrivenceSchema=require('../models/Grivence');
-const User=require('../models/user')
-const {Problemplus,problemdata_admin,problemdata_super,updateStatus} = require('../controller/Problemcontroller')
+const multer = require('multer');
+const GrivenceSchema = require('../models/Grivence');
+const User = require('../models/user')
+const { Problemplus, problemdata_admin, problemdata_super, updateStatus } = require('../controller/Problemcontroller')
 const router = express.Router();
 
 const storage = multer.diskStorage({
@@ -20,61 +22,59 @@ let imageName;
 const upload = multer({ storage: storage });
 
 router.post("/upload", upload.single("image"), async (req, res) => {
-console.log("hello");
-imageName = req.file.filename;
-return res.status(200).json({
-   success: true,
-   message: "Image Uploaded Successfully",
- });
+  console.log("hello");
+  imageName = req.file.filename;
+  return res.status(200).json({
+    success: true,
+    message: "Image Uploaded Successfully",
+  });
 
 });
 
-router.post('/add-problem' ,async (req, res) => {
-console.log("add-problem");
+router.post('/add-problem', async (req, res) => {
+  console.log("add-problem");
   try {
     const {
       email,
       subdepartment,
-      department,
       problem,
-      address,
+      department,
       location,
       token,
     } = req.body;
+
     if (
       !department ||
       !problem ||
-      !address||
-      !email||
-      !subdepartment||
-      !location||
-      !imageName
+      !email ||
+      !subdepartment ||
+      !location
     ) {
       return res.status(408).json({
         success: false,
         messages: "Please Fill all fields",
       });
     }
-    
-    const users = await User.findOne({email});
-    console.log("first")
+
+    const users = await User.findOne({ email });
+
     if (!users) {
       return res.status(400).json({
         success: false,
         message: "User not found",
       });
     }
- 
+
     let Newgrievance = await GrivenceSchema.create({
-      department:department,
       subdepartment: subdepartment,
-      problem:problem,
-      address:address,
-      user:users._id,
-      Image:imageName,
-      token:token,
+      problem: problem,
+      Image: imageName,
+      department: department,
+      token: token,
+      user: users._id,
+      location: location,
     });
-   
+
     users.post.push(Newgrievance);
     await users.save();
 

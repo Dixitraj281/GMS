@@ -6,10 +6,10 @@ function View({image}) {
 <div>
 <img 
   src={require(`../src/images/${image}`)}
-  height={1400}
-  width={1400}
+  height={500}
+  width={500}
 
-  alt="no"
+  alt="Problem img not found !"
 />
 </div>
   )

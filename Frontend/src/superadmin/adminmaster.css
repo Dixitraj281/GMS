@@ -1,0 +1,57 @@
+/* adminmaster.css */
+
+.admin-container {
+  padding: 20px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* Adjusted width */
+  gap: 20px;
+  width: 80%; /* Changed to percentage for responsiveness */
+  margin: auto; /* Center horizontally */
+  justify-content: center; /* Center the cards */
+}
+
+.admin-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%; /* Ensure card takes full width */
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.admin-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.admin-card .admin-card-body {
+  padding: 20px;
+}
+
+.admin-card .admin-card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.admin-card .admin-card-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.btn-danger {
+  margin-top: 10px;
+}
